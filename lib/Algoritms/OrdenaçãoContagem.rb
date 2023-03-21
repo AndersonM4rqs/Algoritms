@@ -6,6 +6,11 @@ a.each do |n|
     c[n] += 1
 end
 
+c.each do |n|
+    next = (n + 1)
+    c[n] << (c[n] + c[next])
+    next += 1
+end
 puts c
 
 
